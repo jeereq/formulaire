@@ -1,0 +1,149 @@
+* {
+    font-weight: 200;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: white;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #8cc6ec, #9599e2);
+}
+
+body form {
+    display: flex;
+    height: 85vh;
+    width: 85vw;
+    margin: auto;
+    margin-top: 7.5vh;
+}
+
+form .block {
+    height: 100%;
+    width: 50%;
+}
+
+form section:nth-of-type(1) {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: white;
+}
+
+form section:nth-of-type(2) {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #4f54d4;
+}
+
+section {
+    padding: 30px;
+}
+
+section h1 {
+    color: #2a64bd;
+    padding: 25px;
+    padding-top: 0;
+    padding-left: 0;
+}
+
+section:nth-of-type(2) h1 {
+    color: white;
+}
+
+section:nth-of-type(2) input,
+section:nth-of-type(2) select {
+    color: #e7e2fe;
+    border-bottom: 1px solid #6a60ec;
+}
+
+section input,
+select {
+    height: 45px;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    border-radius: 0;
+    background-color: transparent;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    color: #757575;
+}
+
+section input.identite,
+select.identite {
+    width: 47%;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+input:checked {
+    border-radius: 50%;
+    outline: 2px solid white;
+}
+
+label {
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 15px;
+    width: 60%;
+    color: #b7aaee;
+}
+
+input.identite:nth-of-type(1) {
+    margin-right: 5%;
+}
+
+input#busness {
+    width: 53%;
+}
+
+select.identite {
+    width: 40%;
+    margin-left: 5%;
+}
+
+option {
+    padding: 10px;
+    background: green;
+}
+
+input.minis {
+    width: 30%;
+    margin-right: 4%;
+}
+
+input.big,
+select.big {
+    width: 65%;
+}
+
+button {
+    font-weight: 600;
+    border: none;
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 25px;
+}
+
+button:active {
+    border-radius: 25px;
+}
