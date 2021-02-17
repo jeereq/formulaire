@@ -1,6 +1,6 @@
 * {
     font-weight: 200;
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -61,8 +61,13 @@ section:nth-of-type(2) select {
     border-bottom: 1px solid #6a60ec;
 }
 
+section:nth-of-type(2) ::placeholder {
+    color: #e7e2fe;
+}
+
 section input,
 select {
+    color: #757575;
     height: 45px;
     border: none;
     border-bottom: 1px solid #dddddd;
@@ -71,6 +76,9 @@ select {
     padding-left: 10px;
     margin-bottom: 5px;
     width: 100%;
+}
+
+section input::placeholder {
     color: #757575;
 }
 
@@ -80,24 +88,13 @@ select.identite {
 }
 
 input[type="radio"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border-radius: 50%;
     width: 15px;
     height: 15px;
     border: 2px solid #999;
     transition: 0.2s all linear;
     margin-right: 5px;
-    position: relative;
-    top: 4px;
     background-color: white;
     margin-top: 15px;
-}
-
-input:checked {
-    border-radius: 50%;
-    outline: 2px solid white;
 }
 
 label {
@@ -121,11 +118,6 @@ select.identite {
     margin-left: 5%;
 }
 
-option {
-    padding: 10px;
-    background: green;
-}
-
 input.minis {
     width: 30%;
     margin-right: 4%;
@@ -146,4 +138,19 @@ button {
 
 button:active {
     border-radius: 25px;
+}
+
+section:nth-of-type(2) option {
+    background-color: #4f54d4;
+}
+
+option {
+    height: auto;
+}
+
+option::before {
+    content: '';
+    height: 10px;
+    width: 100%;
+    background-color: red;
 }
