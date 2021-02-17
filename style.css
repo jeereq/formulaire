@@ -122,7 +122,9 @@ input.minis {
     width: 30%;
     margin-right: 4%;
 }
-
+input:focus {
+    outline: none;
+}
 input.big,
 select.big {
     width: 65%;
