@@ -18,7 +18,7 @@ body {
 body form {
     display: flex;
     height: 85vh;
-    width: 85vw;
+    width: 80vw;
     margin: auto;
     margin-top: 7.5vh;
 }
@@ -113,7 +113,7 @@ input.identite:nth-of-type(1) {
 }
 
 input#busness {
-    width: 53%;
+    width: 55%;
 }
 
 select.identite {
