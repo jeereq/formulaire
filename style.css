@@ -159,3 +159,8 @@ option::before {
     width: 100%;
     background-color: red;
 }
+
+.perfect{
+    display :flex;
+    justify-content:space-between;
+}
