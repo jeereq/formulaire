@@ -11,20 +11,24 @@ a {
 }
 
 body {
-    height: 100vh;
+    height: 100vmin;
     background: linear-gradient(135deg, #8cc6ec, #9599e2);
 }
 
 body form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
-    height: 85vh;
-    width: 80vw;
+    height: auto;
+    width: 70
+    vw;
     margin: auto;
-    margin-top: 7.5vh;
 }
 
-form .block {
-    height: 100%;
+form section.block {
+    height: auto;
     width: 50%;
 }
 
@@ -39,9 +43,6 @@ form section:nth-of-type(2) {
     border-bottom-right-radius: 15px;
     background-color: #4f54d4;
 }
-select :active {
-    outline: none;
-}
 
 section {
     padding: 30px;
@@ -49,7 +50,7 @@ section {
 
 section h1 {
     color: #2a64bd;
-    padding: 25px;
+    padding: 20px;
     padding-top: 0;
     padding-left: 0;
 }
@@ -70,8 +71,10 @@ section:nth-of-type(2) ::placeholder {
 
 section input,
 select {
+    display: inline-block;
     color: #757575;
-    height: 45px;
+    font-weight: 500;
+    height: 47.5px;
     border: none;
     border-bottom: 1px solid #dddddd;
     border-radius: 0;
@@ -87,22 +90,39 @@ section input::placeholder {
 
 section input.identite,
 select.identite {
-    width: 47%;
+    width: 46.5%;
 }
 
 input[type="radio"] {
-    width: 15px;
-    height: 15px;
-    border: 2px solid #999;
-    transition: 0.2s all linear;
+    width: auto;
+    height: auto;
+    border-radius: 50%;
     margin-right: 5px;
-    background-color: white;
     margin-top: 15px;
+    padding-bottom: 20px;
+    background-color: white;
+    outline: none;
+}
+
+.block:nth-of-type(2) .perfect {
+    width: 70%;
+    margin-right: 30%;
+}
+
+.block:nth-of-type(2) .perfect label {
+    width: 100%;
+    padding-right: 20%;
+}
+
+input[type="radio"].perfect {
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-around;
 }
 
 label {
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 15px;
     width: 60%;
     color: #b7aaee;
@@ -113,7 +133,16 @@ input.identite:nth-of-type(1) {
 }
 
 input#busness {
-    width: 54%;
+    width: 53%;
+}
+
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    border: none;
+    outline: none;
 }
 
 select.identite {
@@ -125,9 +154,7 @@ input.minis {
     width: 30%;
     margin-right: 4%;
 }
-input:focus,select:focus {
-    outline: none;
-}
+
 input.big,
 select.big {
     width: 65%;
@@ -136,31 +163,27 @@ select.big {
 button {
     font-weight: 600;
     border: none;
-    padding: 15px;
-    margin-top: 25px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
     border-radius: 25px;
 }
 
-button:active {
-    border-radius: 25px;
+button:focus {
+    transition: 1S ease;
+    transform: scale(1.1);
+    outline: none;
 }
 
 section:nth-of-type(2) option {
     background-color: #4f54d4;
 }
 
-option {
-    height: auto;
-}
-
-option::before {
-    content: '';
-    height: 10px;
+section.block:nth-of-type(2) .perfect {
+    margin-right: 0;
     width: 100%;
-    background-color: red;
 }
 
-.perfect{
-    display :flex;
-    justify-content:space-between;
+.perfect {
+    display: flex;
+    justify-content: space-between;
 }
