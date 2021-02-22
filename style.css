@@ -22,7 +22,7 @@ body form {
     transform: translate(-50%, -50%);
     display: flex;
     height: auto;
-    width: 70vw;
+    width: 70 vw;
     margin: auto;
 }
 
@@ -160,7 +160,7 @@ select.big {
 }
 
 button {
-    font-weight: 600;
+    font-weight: 550;
     border: none;
     padding: 10px 15px;
     margin-bottom: 20px;
